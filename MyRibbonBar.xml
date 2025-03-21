@@ -1,0 +1,45 @@
+ <!-- xmlns="http://schemas.microsoft.com/office/2009/07/customui"-->
+ <!--startFromScratch="true"-->
+ <customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+	<ribbon startFromScratch="true">
+		<tabs>
+		
+			<!--- العملاء-->
+			<tab id="Cust" label="العملاء">
+				<group id="Gro1" label="إدارة العملاء">
+					<button id="btnAddCust" label="إضافة عميل" imageMso="QueryAppend" size="large" onAction="AddNewCustomer" />
+					<button id="btnEditCust" label="تعديل عميل" imageMso="QueryUpdate" size="large" onAction="EditCustomer" />
+					<button id="btnDeleteCust" label="حذف عميل" imageMso="QueryDelete" size="large" onAction="DeleteCustomer" />
+				</group>
+			</tab>
+			
+			<!--- الموردين-->
+			<tab id="Cli" label="الموردين">
+				<group id="Gro2" label="إدارة الموردين">
+					<button id="btnAddCli" label="إضافة مورد" imageMso="QueryAppend" size="large" onAction="AddNewClient" />
+					<button id="btnEditcli" label="تعديل مورد" imageMso="QueryUpdate" size="large" onAction="EditClient" />
+					<button id="btnDeletecli" label="حذف مورد" imageMso="QueryDelete" size="large" onAction="DeleteClient" />
+				</group>
+			</tab>
+			
+				<!--- الأصناف-->
+			<tab id="item" label="الأصناف">
+				<group id="Gro3" label="إدارة الموردين">
+					<button id="btnAdditem" label="إضافة صنف جديد" imageMso="QueryAppend" size="large" onAction="AddNewItem" />
+					<button id="btnEdititem" label="تعديل بيانات صنف" imageMso="QueryUpdate" size="large" onAction="EditItem" />
+					<button id="btnDeleteitem" label="حذف بيانات صنف" imageMso="QueryDelete" size="large" onAction="DeleteItem" />
+					<dropDown id="drop1" label="إختار التاريخ" >
+						<item id="12-10-2025" label="12-10-2025" />
+						<item id="11-11-2025" label="11-11-2025" />
+						<item id="09-08-2024" label="09-08-2024" />
+						<item id="12-07-2025" label="12-07-2025" />
+						<item id="12-06-2024" label="12-06-2024" />
+						<item id="15-10-2025" label="15-10-2025" />
+						<item id="20-12-2024" label="20-12-2024" />
+					</dropDown>
+				</group>
+			</tab>
+			
+		</tabs>
+	</ribbon>
+</customUI>
